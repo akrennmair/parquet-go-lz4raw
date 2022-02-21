@@ -5,6 +5,8 @@ import (
 	"errors"
 	"io"
 
+	goparquet "github.com/fraugster/parquet-go"
+	"github.com/fraugster/parquet-go/parquet"
 	lz4 "github.com/pierrec/lz4/v4"
 )
 
@@ -38,5 +40,5 @@ func (c *LZ4RawBlockCompressor) DecompressBlock(data []byte) ([]byte, error) {
 }
 
 func init() {
-	//goparquet.RegisterBlockCompressor(parquet.CompressionCodec_LZ4_RAW, NewLZ4RawBlockCompressor()) // TODO: enable when new version supporting parquet-format 2.9.0 has been released.
+	goparquet.RegisterBlockCompressor(parquet.CompressionCodec_LZ4_RAW, NewLZ4RawBlockCompressor())
 }
