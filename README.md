@@ -1,4 +1,4 @@
-# parquet-go-block-compressors
+# parquet-go-lz4raw
 
 <p align="center">
 <a href="https://pkg.go.dev/github.com/akrennmair/parquet-go-lz4raw"><img src="https://pkg.go.dev/badge/github.com/akrennmair/parquet-go-lz4raw.svg" alt="Go Reference"></a>
